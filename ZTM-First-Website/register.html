@@ -9,22 +9,22 @@
 
     <body>
         
-        <form>
+        <form method="GET">
         
             <label for="firstname">First Name:</label><br>
-            <input type="text"id="firstname"><br> 
+            <input type="text"name="firstname"><br> 
             
             <label for="lastname">Last Name:</label><br>
-            <input type="text" id="lastname"><br>
+            <input type="text" name="lastname"><br>
 
             <label for="birth">Date of Birth:</label><br>
-            <input type="date" id="birth" required><br>
+            <input type="date" name="birth" required><br>
 
             <label for="email">Email:</label><br>
-            <input type="email" id="email" required><br>
+            <input type="email" name="email" required><br>
 
             <label for="password">Password:</label><br>
-            <input type="password" id="password" min="5" required><br>
+            <input type="password" name="password" min="5" required><br>
 
             <label>Gender:</label><br>
             <input type="radio" name="gender">Male<br>
@@ -32,14 +32,14 @@
             <input type="radio" name="gender">Other<br>
 
             <label>Pets:</label><br>
-            <input type="checkbox">Cats<br>
-            <input type="checkbox">Dogs<br>
+            <input type="checkbox"name="cats">Cats<br>
+            <input type="checkbox" name="dogs">Dogs<br>
 
             <label>Cars:</label><br>
-                <select>
-                    <option value="volvo">Volvo</option>
-                    <option value="audi">Audi</option>
-                    <option value="volkswagen">Volkswagen</option>
+                <select name="cars">
+                    <option value="volvo" name="volvo">Volvo</option>
+                    <option value="audi" name="audi">Audi</option>
+                    <option value="volkswagen" name="volkswagen">Volkswagen</option>
                 </select><br>
 
             <input type="submit" value="Register">
