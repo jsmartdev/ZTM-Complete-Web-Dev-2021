@@ -14,3 +14,15 @@ h1 {
   font-size: 3rem;
   color: #e2dbdb;
 }
+
+.btn {
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 300px;
+  background-color: coral;
+  border-color: coral;
+}
+
+.btn-xl {
+  padding: 1rem 2rem;
+}
