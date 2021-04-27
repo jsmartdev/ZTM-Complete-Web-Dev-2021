@@ -1,3 +1,4 @@
-.btn-secondary {
-    background-color: orange;
+.col {
+    background-color: grey;
+    border: 2px solid black;
 }
