@@ -5,10 +5,10 @@
 }
 
 h1 {
-    font-family: fantasy;
+    font-family: 'New Tegomin', serif;
     font-size: 3em;
-    border-bottom: 2px solid pink;
-    border-right: 2px solid pink;
+    border-bottom: 2px solid goldenrod;
+    border-right: 2px solid goldenrod;
     width: 400px;
     text-align: center;
 }
@@ -16,4 +16,10 @@ h1 {
 img {
     width: 450px;
     height: 300px;
+    margin: 10px;
+    transition: all 0.5s;
+}
+
+img:hover {
+    transform: scale(1.1);
 }
