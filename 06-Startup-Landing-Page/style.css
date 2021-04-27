@@ -15,12 +15,24 @@ h1 {
   color: #e2dbdb;
 }
 
+hr {
+  border-color: #f05f44;
+  border-width: 3px;
+  max-width: 65px;
+}
+
 .btn {
   font-weight: 700;
   text-transform: uppercase;
   border-radius: 300px;
-  background-color: coral;
-  border-color: coral;
+  background-color: #f05f44;
+  border-color: #f05f44;
+}
+
+.btn:hover {
+  background-color: #ee4b08;
+  border-color: #ee4b08;
+  border-width: 3px;
 }
 
 .btn-xl {
