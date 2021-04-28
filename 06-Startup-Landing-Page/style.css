@@ -39,6 +39,12 @@ hr {
   border-width: 3px;
 }
 
+.btn:active {
+  background-color: #ee4b08;
+  border-color: orangered;
+  border-width: 4px;
+}
+
 .btn-xl {
   padding: 1rem 2rem;
 }
