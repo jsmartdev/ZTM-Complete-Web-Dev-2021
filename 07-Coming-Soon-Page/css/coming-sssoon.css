@@ -74,10 +74,10 @@ h3, .h3{
     margin: 20px 0 10px;
 }
 h4, .h4{
-    font-size: 22px;
+    font-size: 20px;
 }
 h5, .h5 {
-    font-size: 16px;
+    font-size: 14px;
 }
 h6, .h6{
     font-size: 14px;
@@ -733,6 +733,7 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
     text-align: center;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.33);
     margin-top: 150px;
+    margin-bottom: 60px;
     z-index: 3;
 }
 .main .logo.cursive{
@@ -748,7 +749,7 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
     min-height: 140px;
 }
 .main .motto, .main .subscribe .info-text{
-    font-size: 28px;
+    font-size: 25px;
     color: #FFFFFF;
     text-shadow: 0 1px 4px rgba(0, 0, 0, 0.33);
     text-align: center;
