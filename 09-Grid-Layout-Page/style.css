@@ -1,5 +1,6 @@
 body {
     margin: auto 0;
+    font-family: 'Cormorant', serif;
 }
 
 .zone {
@@ -21,11 +22,26 @@ body {
     box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
 }
 
+.box:hover {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+/* NAV */
+
 .main-nav {
     display: flex;
     list-style: none;
     font-size: 0.7em;
     margin: 0;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -54,8 +70,15 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50vh;
+    height: 70vh;
 }
+
+.cover {
+    width: 30rem;
+}
+
+
+
 /* GRID */
 
 .grid-wrapper {
