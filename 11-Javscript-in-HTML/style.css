@@ -23,12 +23,14 @@ h1 {
 .grid-wrap {
     display: grid;
     gap: 30px;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
+    justify-content: center;
+    align-items: center;
 }
 
 .box {
-    justify-content: left;
-    align-items: left;
+    justify-content: center;
+    align-items: center;
     text-justify: center;
     text-align: center;
 }
@@ -36,4 +38,24 @@ h1 {
 .submit {
     margin-top: 20px;
     text-align: center;
+}
+
+.sub-btn {
+    display:inline-block;
+    padding:0.5em 3em;
+    border:0.16em solid black;
+    background-color: transparent;
+    margin:0 0.3em 0.3em 0;
+    box-sizing: border-box;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-family: 'Texturina', serif;
+    font-weight: 100;
+    color: black;
+    text-align:center;
+    transition: all 0.15s;
+}
+
+.sub-btn:hover {
+    cursor: pointer;
 }

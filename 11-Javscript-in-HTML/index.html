@@ -14,32 +14,23 @@
         <form>
             <div class="grid-wrap">
                 <div class="box">
-                    <label>Birth year</label><br>
-                    <input type="number" title="Enter your birth year" id="year" name="year" min="1900" max="2015" required>
+                    <label>Your Birthday</label><br>
+                    <input type="number" title="your birth month (1-12)" id="your-month" name="your-month" min="1" max="12" required><br>
+                    <input type="number" title="your day of birth (1-31)" id="your-day" name="your-day" min="1" max="31" required>
                 </div>
                 <div class="box">
-                    <label>Age</label><br>
-                    <input type="number" title="Enter your age" id="age" name="age" min="1" max="120" required>
+                    <label>Mother's Birthday</label><br>
+                    <input type="number" title="mother's birth month (1-12)" id="mom-month" name="mom-month" min="1" max="12" required><br>
+                    <input type="number" title="mother's day of birth (1-31)" id="mom-day" name="mom-day" min="1" max="31" required>
                 </div>
                 <div class="box">
-                    <label>Pets</label><br>
-                    <input type="number" title="Enter your number of dogs and cats" id="pets" name="pets" min="0" max="10" required>
-                </div>
-                <div class="box">
-                    <label>Siblings</label><br>
-                    <input type="number" title="Enter your number of siblings" id="siblings" name="siblings" min="0" max="10" required>
-                </div>
-                <div class="box">
-                    <label>States</label><br>
-                    <input type="number" title="Enter the number of states in which you've lived" id="states" name="states" min="1" max="50" required>
-                </div>
-                <div class="box">
-                    <label>Random</label><br>
-                    <input type="number" title="Enter a number between 1 & 50" id="random" name="random" min="1" max="50" required>
+                    <label>Father's Birthday</label><br>
+                    <input type="number" title="father's birth month (1-12)" id="dad-month" name="dad-month" min="1" max="12" required><br>
+                    <input type="number" title="father's day of birth (1-31)" id="dad-day" name="dad-day" min="1" max="31" required>
                 </div>
             </div>
             <div class="submit">
-                <input type="submit" title="Submit your answers">
+                <input class="sub-btn" type="submit" title="Submit your answers">
             </div>
         </form>    
         <script type="text/javascript" src="script.js"></script>
