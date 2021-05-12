@@ -26,3 +26,9 @@ sing("LAMMA!");
 sing("DING!");
 sing("DONG!");
 
+function multiply(a, b) {
+    return a * b
+}
+
+multiply(8, 9);
+
