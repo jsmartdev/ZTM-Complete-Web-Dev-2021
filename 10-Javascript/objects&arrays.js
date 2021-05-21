@@ -5,7 +5,7 @@
 // 1. Create an object that has properties "username" and "password". Fill those values in with strings.
 
 let user = {
-    username: "Broseph Dudeman",
+    username: "dudemanbro",
     password: "broseph92",
 };
 
@@ -13,8 +13,16 @@ let user = {
 
 let database = [
     {
-    username: "Broseph Dudeman",
-    password: "broseph92",
+        username: "dudemanbro",
+        password: "broseph92"
+    },
+    {
+        username: "piratebooty213",
+        password: "booty312"  
+    },
+    {
+        username: "justkim",
+        password: "georgeismyfavecat"
     }
 ];
 
@@ -22,15 +30,40 @@ let database = [
 
 let newsfeed = [
     {
-        username: "John Wells",
-        timeline: "Tuesday"
+        username: "Johnny88",
+        timeline: "Can anyone help me with a CSS problem"
     },
     {
-        username: "Brenda Knight",
-        timeline: "Monday"
+        username: "piratebooty213",
+        timeline: "started learning C# today"
     },
     {
-        username: "Judy Brown",
-        timeline: "Friday"
+        username: "justkim",
+        timeline: "johnny, I can help if you still need it"
     }
 ];
+
+let usernamePrompt = prompt("What's your username?");
+let passwordPrompt = prompt("What's your password?");
+
+function isUserValid(username, password) {
+    for (i = 0; i < database.length; i++) {
+        if (database[i].username === username && database[i].password === password) {
+            return true;
+        }
+    }
+    return false;
+};
+
+function signIn(username, password) {
+    if (isUserValid(username, password)) {
+        for (i = 0; i < newsfeed.length; i++) {
+            console.log(newsfeed[i].username, ":", newsfeed[i].timeline);
+        }
+    }
+    else {
+        alert("Sorry, wrong username and password.")
+    }
+};
+
+signIn(usernamePrompt, passwordPrompt);
