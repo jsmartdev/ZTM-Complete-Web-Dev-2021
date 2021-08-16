@@ -1,5 +1,4 @@
 /* eslint-disable */
-
 var button = document.getElementById("enter");
 var input = document.getElementById("userinput");
 var ul = document.querySelector("ul");
@@ -30,3 +29,14 @@ function addListAfterKeypress(event) {
 button.addEventListener("click", addListAfterClick);
 
 input.addEventListener("keypress", addListAfterKeypress);
+
+var h1 = document.querySelector("h1");
+
+h1.className = "coolTitle";
+
+var ul = document.querySelector("ul")
+
+ul.onclick = function(event){
+	var target = getEventTarget(event);
+	target.classList.toggle("done");
+}
