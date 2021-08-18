@@ -48,6 +48,11 @@ function deleteToDo(element) {
 	}
 }
 
+function handleListClicks(element) {
+	doneToDo(element);
+	deleteToDo(element);
+}
+
 button.addEventListener("click", addListAfterClick);
 
 input.addEventListener("keypress", addListAfterKeypress);
