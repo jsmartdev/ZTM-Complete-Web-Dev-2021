@@ -1,4 +1,5 @@
 /* eslint-disable */
+
 var button = document.getElementById("enter");
 var input = document.getElementById("userinput");
 var ul = document.querySelector("ul");
@@ -8,10 +9,18 @@ function inputLength() {
 }
 
 function createListElement() {
+	var div = document.createElement("div")
 	var li = document.createElement("li");
+	var deleteButton = document.createElement("button")
+	div.classList.add("container");
+	ul.appendChild("div");
+	div.append(li, deleteButton);
+	li.classList.add("toDo");
 	li.appendChild(document.createTextNode(input.value));
 	ul.appendChild(li);
 	input.value = "";
+	deleteButton.classList.add("delete");
+	deleteButton.innerHTML="Delete";
 }
 
 function addListAfterClick() {
@@ -29,14 +38,3 @@ function addListAfterKeypress(event) {
 button.addEventListener("click", addListAfterClick);
 
 input.addEventListener("keypress", addListAfterKeypress);
-
-var h1 = document.querySelector("h1");
-
-h1.className = "coolTitle";
-
-var ul = document.querySelector("ul")
-
-ul.onclick = function(event){
-	var target = getEventTarget(event);
-	target.classList.toggle("done");
-}
