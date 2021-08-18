@@ -9,7 +9,7 @@ function createListElement() {
 	var li = document.createElement("li");
 	var deleteButton = document.createElement("button")
 	div.classList.add("container");
-	ul.appendChild("div");
+	ul.appendChild(div);
 	div.append(li, deleteButton);
 	li.classList.add("toDo");
 	li.appendChild(document.createTextNode(input.value));
@@ -36,9 +36,9 @@ function addListAfterKeypress(event) {
 	}
 }
 
-function doneToDo(element) {
-	if (element.target.tagName === "li") {
-		element.target.classList.toggle("done");
+function doneToDo(task) {
+	if (task.target.tagName === "li") {
+		task.target.classList.toggle("done");
 	}
 }
 
