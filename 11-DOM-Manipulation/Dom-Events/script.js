@@ -42,6 +42,12 @@ function doneToDo(element) {
 	}
 }
 
+function deleteToDo(element) {
+	if (element.target.className === "delete") {
+		element.target.parentElement.remove();
+	}
+}
+
 button.addEventListener("click", addListAfterClick);
 
 input.addEventListener("keypress", addListAfterKeypress);
