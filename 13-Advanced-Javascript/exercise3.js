@@ -49,10 +49,11 @@ const { firstName, lastName, age, eyeColor } = person;
     l: l
     }; */
 
+const j = 'test';
+const k = true;
+const l = 789;
 
-
-
-
+const myObject = {j, k, l};
 
 // Template strings
 var message = "Hello " + firstName + " have I met you before? I think we met in " + city + " last summer no???";
