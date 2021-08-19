@@ -62,9 +62,12 @@ const message = `Hello ${firstName}. Have I met you before? I think we met in ${
 
 // default arguments
 // default age to 10;
-function isValidAge(age) {
+
+/*  function isValidAge(age) {
     return age
-}
+    } */
+
+const isValidAge = (age = 10) => age;
 
 // Symbol
 // Create a symbol: "This is my first Symbol"
