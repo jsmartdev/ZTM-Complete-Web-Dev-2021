@@ -72,6 +72,8 @@ const isValidAge = (age = 10) => age;
 // Symbol
 // Create a symbol: "This is my first Symbol"
 
+const sym = Symbol("This is my first javascript Symbol");
+
 // Arrow functions
 function whereAmI(username, location) {
     if (username && location) {
