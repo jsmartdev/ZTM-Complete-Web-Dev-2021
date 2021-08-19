@@ -56,8 +56,9 @@ const l = 789;
 const myObject = {j, k, l};
 
 // Template strings
-var message = "Hello " + firstName + " have I met you before? I think we met in " + city + " last summer no???";
+/* var message = "Hello " + firstName + " have I met you before? I think we met in " + city + " last summer no???"; */
 
+const message = `Hello ${firstName}. Have I met you before? I think we met in ${city} last summer, no?`;
 
 // default arguments
 // default age to 10;
