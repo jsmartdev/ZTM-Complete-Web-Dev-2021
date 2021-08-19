@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 // change everything below to the newer Javascript!
 
 // let + const
