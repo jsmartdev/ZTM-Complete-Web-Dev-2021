@@ -33,12 +33,12 @@ function moveCommand(direction) {
     return whatHappens;
 }
 
-//#2 return value when moveCommand("forward"); 
+//#2 return value when moveCommand("forward"); Answer: undefined
 
-//#3 return value when moveCommand("back"); 
+//#3 return value when moveCommand("back"); Answer: you arrived home
 
-//#4 return value when moveCommand("right");
+//#4 return value when moveCommand("right"); Answer: you found a river
 
-//#5 return value when moveCommand("left");
+//#5 return value when moveCommand("left"); Answer: undefined
 
 //BONUS: practice makes perfect. Go and write your own switch function. It takes time to get used to the syntax!
