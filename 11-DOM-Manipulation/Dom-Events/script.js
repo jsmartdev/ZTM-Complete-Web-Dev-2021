@@ -2,21 +2,22 @@
 
 var button = document.getElementById("enter");
 var input = document.getElementById("userinput");
-var ul = document.querySelector("ul");
+var ul = document.querySelector("UL");
 
 function createListElement() {
-	var div = document.createElement("div")
+	var div = document.createElement("div");
 	var li = document.createElement("li");
-	var deleteButton = document.createElement("button")
-	div.classList.add("container");
+	var deleteButton = document.createElement("button");
 	ul.appendChild(div);
-	div.append(li, deleteButton);
+	div.classList.add("container");
+	div.appendChild(li);
+	div.appendChild(deleteButton);
 	li.classList.add("toDo");
-	li.appendChild(document.createTextNode(input.value));
-	ul.appendChild(li);
-	input.value = "";
 	deleteButton.classList.add("delete");
 	deleteButton.innerHTML="Delete";
+	li.appendChild(document.createTextNode(input.value));
+	input.value = "";
+	console.log(div);
 }
 
 function inputLength() {
@@ -36,9 +37,9 @@ function addListAfterKeypress(event) {
 	}
 }
 
-function doneToDo(task) {
-	if (task.target.tagName === "li") {
-		task.target.classList.toggle("done");
+function doneToDo(element) {
+	if (element.target.tagName === "LI") {
+		element.target.classList.toggle("done");
 	}
 }
 
