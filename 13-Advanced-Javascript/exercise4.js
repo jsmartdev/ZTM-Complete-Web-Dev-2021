@@ -14,9 +14,13 @@ addToTen(3)
 // addToTen(3) returns 13
 
 //Currying: What does the last line return?
-const sum = (a, b) => a + b
+
+//Currying: What does the last line return?
+const sum = (a, b) => a + b;
 const curriedSum = (a) => (b) => a + b
-curriedSum(30)(1)
+curriedSum(30)(1) 
+
+// curriedSum(30)(1) returns 31
 
 
 //Currying: What does the last line return?
