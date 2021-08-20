@@ -57,6 +57,11 @@ console.log(filterArray);
 
 //Find out the total score of all users using reduce
 
+const total = array.reduce((accum, member) => {
+	return accum + member.score;
+}, 0);
+console.log(total);
+
 // (1), what is the value of i?
 // (2), Make this map function pure:
 
