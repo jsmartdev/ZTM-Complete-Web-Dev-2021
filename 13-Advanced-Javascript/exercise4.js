@@ -30,9 +30,9 @@ add5(12)
 
 //#5 Composing: What does the last line return?
 const compose = (f, g) => (a) => f(g(a));
-const add1 = (num) => num + 1;
-const add5 = (num) => num + 5;
-compose(add1, add5)(10)
+const addOne = (num) => num + 1;
+const addFive = (num) => num + 5;
+compose(addOne, addFive)(10)
 
 // compose(add1, add5)(10) returns 16
 
