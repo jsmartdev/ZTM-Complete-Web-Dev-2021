@@ -73,4 +73,4 @@ const itemArray = array.map(member => {
 	});
 	return member;
 })
-console.log(itemArray);
+console.log(typeof itemArray);

@@ -87,7 +87,8 @@ const sym = Symbol("This is my first javascript Symbol");
 const whereAmI = (username, location) => {
     if (username && location) {
         return "I am not lost";
-    } else {
+    } 
+    else {
         return "I am totally lost!";
     }
 }
