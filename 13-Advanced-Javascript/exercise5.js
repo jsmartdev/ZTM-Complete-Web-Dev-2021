@@ -34,17 +34,17 @@ const array = [
 
 let newArray = []
 array.forEach(name => {
-	  let { username } = name;
-	  username = username + "!";
-	  newArray.push(username);
+    let { username } = name;
+    username = username + "!";
+	newArray.push(username);
 })
 console.log(newArray);
 
 //Create an array using map that has all the usernames with a "? to each of the usernames
 
 const mapArray = array.map(user => {
-	  let { username } = user;
-	  return username + "?";
+	let { username } = user;
+	return username + "?";
 })
 console.log(mapArray);
 
@@ -58,7 +58,7 @@ console.log(filterArray);
 //Find out the total score of all users using reduce
 
 const total = array.reduce((accum, member) => {
-	  return accum + member.score;
+	return accum + member.score;
 }, 0);
 console.log(total);
 
