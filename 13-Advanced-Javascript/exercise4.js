@@ -38,6 +38,6 @@ compose(addOne, addFive)(10)
 
 //#6 What are the two aspects of a pure function?
 
-//1 - Deterministic - always produces the same outcome if given the same variables
+    //1 - Deterministic - always produces the same outcome if given the same variables
 
-//2- No Side Effects - only depends on its input variables
+    //2- No Side Effects - only depends on its input variables
