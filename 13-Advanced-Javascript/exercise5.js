@@ -68,9 +68,9 @@ console.log(total);
 //BONUS: create a new list with all user information, but add "!" to the end of each items they own.
 
 const itemArray = array.map(member => {
-	  member.items = member.items.map(item => {
-		    return item + "!"
-	  });
-	  return member;
+	member.items = member.items.map(item => {
+		return item + "!"
+	});
+	return member;
 })
 console.log(typeof itemArray);
